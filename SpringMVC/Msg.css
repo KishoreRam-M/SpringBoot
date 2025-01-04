@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+nav {
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav img {
+    width: 150px;
+    height: auto;
+}
+
+.search {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    transition: all 0.4s ease;
+}
+
+.search:focus {
+    outline: none;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+ul li {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #ffdd57;
+}
+
+.menu {
+    background-color: #343a40;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+}
+
+ol li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+ol li a:hover {
+    color: #ffdd57;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.pet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.pet:hover {
+    transform: scale(1.03);
+}
+
+.pet-image {
+    flex: 1 1 40%;
+    object-fit: cover;
+}
+
+.pet-details {
+    flex: 1 1 60%;
+    padding: 20px;
+}
+
+.pet-name {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pet-specification {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff5252;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+} 
